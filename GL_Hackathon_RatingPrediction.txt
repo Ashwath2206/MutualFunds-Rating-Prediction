@@ -1,0 +1,95 @@
+The goal of this hackathon is to predict GreatStone’s rating as a mutual fund. In order to help investors decide on which mutual fund to pick for an investment, the task is to build a model that can predict the rating of a mutual fund. The various attributes that define a mutual fund can be used for building the model. 
+
+Evaluation Criteria: Mean Precision Score
+
+Mean of precision of all the classes = P1+P2/2  Here P1 is the Precision of  Class 1 and P2 is the Precision of Class2.
+
+About the Data:
+
+This dataset comprises information on approx 19000 mutual funds in the United States.  Various attributes related to the mutual fund have been described and these attributes will be used for making decisions on the rating of the mutual fund by  GreatStone which is a top mutual fund rating agency. 
+
+The following files are provided in the form of CSVs. These files contain various attributes related to the mutual fund. Please find the following files for the  same:
+
+funds_train: to be used for model building and model tuning
+
+funds_test: to be used for prediction and submission
+
+Data Dictionary:
+
+ fund_id:   unique identifier for the fund
+ fund_name:   name of the fund
+ parent_company: the parent company of the mutual fund
+ fund_size: the size of a mutual fund (small, large, etc.)
+ greatstone_return_rating:  Return rating by great stone
+ greatstone_risk_rating:   Risk rating by great stone
+ fund_ratio_net_annual_expense:   net annual expense ratio of the mutual fund   (https://economictimes.indiatimes.com/mf/analysis/understanding-expense-ratio-in-a-mutual funds/articles how/65975113.cms?from=mdr)
+
+ 10_years_return_mean_annual_fund':    10 years mean annual return of the mutual fund
+ 10_years_return_fund: 10-year return of the mutual fund
+ 3_years_return_mean_annual_fund:  3 years mean annual return of the mutual fund
+ fund_return_3years: 3-year return of the mutual fund
+ 2012_fund_return:  mutual fund return in the year 2012
+ aaa_rating:  bond allocation percentage in aaa-rated bonds
+ 10_years_beta_category:    10 years beta value category-wise of the mutual fund - (https://www.investopedia.com/ask/answers/102714/whats-difference-between-alpha-and-beta.asp)
+ 
+3_years_return_mean_annual_category:  3 years mean annual return category wise of the mutual fund
+
+ 5_years_alpha_fund:  5 years alpha value of the mutual fund (https://www.investopedia.com/ask/answers/102714/whats-difference-between-alpha-and-beta.asp)
+
+10_years_alpha_fund:   10 years alpha value of the mutual fund
+10yrs_sharpe_ratio_fund:  10 year Sharpe ratio of the mutual fund(https://www.investopedia.com/terms/s/sharperatio.asp)
+
+3_years_alpha_fund:   3 years alpha value of the mutual fund
+cash_percent_of_portfolio:  mutual fund portfolio percentage allocation in cash
+10_years_beta_fund:  10 years beta value of the mutual fund
+10_years_return_mean_annual_category:   10 years mean annual return category wise of the mutual fund
+
+5yrs_sharpe_ratio_fund:  5 year sharpe ratio of the mutual fund(https://www.investopedia.com/terms/s/sharperatio.asp)
+3yrs_sharpe_ratio_fund:  3 year sharpe ratio of the mutual fund(https://www.investopedia.com/terms/s/sharperatio.asp)
+
+2016_return_fund:  mutual fund return in the year 2016
+2010_return_fund:  mutual fund return in the year 2010
+yield:  overall yield of the mutual fund
+portfolio_energy_allocation:  mutual fund allocation in energy stocks
+aa_rating:  bond allocation percentage in aa-rated bonds
+portfolio_property_allocation:  mutual fund allocation in property stocks
+5_years_return_mean_annual_fund:  5 years mean annual return of the mutual fund
+5_years_return_fund: the 5-year return of the mutual fund
+portfolio_financial_services:  mutual fund allocation in financial services stocks
+stock_percent_of_portfolio:  mutual fund portfolio percentage allocation in stocks
+b_rating:  bond allocation percentage in b-rated bonds
+portfolio_cyclical_consumer_allocation:  mutual fund allocation in cyclical consumer goods stocks
+
+2016_return_category:   mutual fund category-wise return in the year 2016
+below_b_rating:  bond allocation percentage in below b-rated bonds
+2017_return_fund:   mutual fund return in the year 2017
+return_ytd: year-to-date return of the mutual fund
+ytd_return_fund:  year till date return of the mutual fund
+fund_return_3months: the 3-month return of the mutual fund
+ 2014_return_fund:  mutual fund return in the year 2014
+ pb_ratio:  price to-book ratio of the mutual fund
+ (https://www.financialexpress.com/market/what-is-price-to-book-ratio-and-what-it-says-about-stocks/1132933/)
+
+1_year_return_fund: the 1-year return of the mutual fund
+portfolio_tech_allocation:  mutual fund allocation in technology stocks
+10years_fund_std:  10 years standard deviation of the mutual fund
+portfolio_healthcare_allocation:   mutual fund allocation in healthcare stocks
+portfolio_others:  mutual fund portfolio percentage allocation in other segments apart from above mentioned
+
+2010_return_category:  mutual fund category-wise return in the year 2010
+
+years_down:  number of years the mutual fund saw a negative return
+3_years_return_category:  category wise 3-year return of the mutual fund
+5_years_beta_category:  5 years beta value category wise of the mutual fund - (https://www.investopedia.com/ask/answers/102714/whats-difference-between-alpha-and-beta.asp)
+
+2018_return_fund: Percentage return in 2018
+
+greatstone_rating:  GreatStone’s  rating of a mutual fund
+
+Attribute information:
+There are a total of 55 attributes for the dataset. Please refer to the data dictionary for more details.
+
+Submission Format:
+You need to submit the .csv format file with 2 columns in the order -  fund_id and greatstone_rating using the test dataset. 
+
+Please make sure the format of your file is exactly the same as mentioned above(order of ids is maintained, letter format etc).
